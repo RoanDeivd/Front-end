@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+h1 {
+    text-align: center;
+}
+
+#burguer {
+    width: 97%;
+    display: block;
+    background-color: aqua;
+    text-align: center;
+}
+
+#burguer:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+menu {
+    width: 90vw;
+    display: none;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: black;
+}

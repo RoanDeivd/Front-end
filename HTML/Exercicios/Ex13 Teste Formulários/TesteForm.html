@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo">
+            </p>
+            <P>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required placeholder="cleber.gomes@gmail.com">
+            </P>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" required pattern="^\(\d{2})\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+            </p>
+            <p>
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="ifem"> <label for="ifem">Feminino</label> <br>
+                    <input type="radio" name="sexo" id="imasc"> <label for="imasc">Masculino</label>
+            </p>
+            <p>
+                <label for="ifoto">Foto</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" minlength="0" maxlength="10" placeholder="0 a 10" step="0.1" required>
+        </p>
+        <p>
+            <label for="imes">Periodo Letivo:</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="idia">Dia da Prova:</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esvolei" id="iesvolei"><label for="iesvolei">Volei</label> <br>
+            <input type="checkbox" name="esbasquete" id="iesbasquete"> <label for="iesbasquete">Basquete</label> <br>
+            <input type="checkbox" name="eshandebol" id="ieshandebol"> <label for="ieshandebol">Handebol</label> <br>
+        </fieldset>
+        <P>
+            <input type="range" name="nivel" id="inivel"> <label for="inivel">Nivel de Satisfação:</label>
+        </P>
+    </form>
+
+</body>
+</html>

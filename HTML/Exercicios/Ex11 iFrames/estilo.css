@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body{
+    height: 100vh;
+}
+
+iframe {
+    width: 380px;
+    height: 760px;
+}

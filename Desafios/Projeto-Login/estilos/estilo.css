@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: dimgrey;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.616);
+
+    transition: width .5s, height .5s;
+}
+
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formulario p {
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+div.imagem {
+    display: block;
+    background:url(../Imagens/fotologin.jpg);
+    background-size: cover;
+    height: 200px;
+    background-position: center center;
+}
+
+div.formulario {
+    display: block;
+    padding: 10px;
+}
+
+input[type=email] {
+    width: 75%;
+    margin-bottom: 5px;
+}
+
+input[type=password] {
+    width: 72%;
+    margin-bottom: 5px;
+}
+
+input[type=submit] {
+    color: white;
+    background-color: #484d50;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: lightgray;
+    color: black;
+    transition: all 0.5s;
+}
+
+.esqueci {
+    font-size: 12px;
+    color: gray;
+    float: right;
+    margin-right: 2px;
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    #login {
+        width: 80vw;
+    }
+
+    div.imagem {
+        float: left;
+        width: 40%;
+        height: 100%;
+        background-position: left center;
+    }
+
+    div.formulario {
+        float: right;
+        width: 60%;
+        height: 100%;
+    }
+
+    input[type=email] {
+        width: 72%;
+        margin-top: 1px;
+        margin-bottom: 5px;
+    }
+    
+    input[type=password] {
+        width: 71%;
+        margin-bottom: 5px;
+    }
+    
+    input[type=submit] {
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    #login {
+        width: 80vw;
+    }
+
+    div.imagem {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    div.formulario {
+        float: right;
+        width: 60%;
+        height: 100%;
+    }
+
+    .formulario p {
+        font-size: 1em;
+    }
+
+    input[type=email] {
+        width: 90%;
+        margin-top: 1px;
+        margin-bottom: 5px;
+    }
+    
+    input[type=password] {
+        width: 89.2%;
+        margin-bottom: 5px;
+    }
+    
+    input[type=submit] {
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+}

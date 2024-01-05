@@ -1,0 +1,47 @@
+@charset "UTF-8"
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, lightskyblue, white);
+}
+
+header{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+}
+a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    margin: 100px;
+
+}
+
+nav {
+    background-color: skyblue;
+    border-radius: 20px;
+    box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.315);
+
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: darkgray;
+    color: white;
+    margin: 10px 0px 10px 0px;
+    border-radius: 20px;
+    padding: 5px;
+}
