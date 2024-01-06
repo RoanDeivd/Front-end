@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos JS</title>
+    <style>
+        body {
+            background-color: darkgray;
+            color: white;
+            padding: 15px;
+        }
+        
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        //Utilizamos Number.parseInt para números inteiros.
+        //Utilizamos Number.parseFloat para números "quebrados" (Ex: 5.4).
+        //Utilizamos apenas Number para que o JS identifique sozinho se o número é inteiro ou "quebrado".
+        //Para transformar String em Number basta colocar o comando Number() antes do comando com a string.
+        //Para transformar Number em String utilizamos o comando String(n) ou n.toString().
+        var n1 = Number(window.prompt('Digite um número'))
+        var n2 = Number(window.prompt('Digite outro número'))
+        var s = n1 + n2
+        window.alert(`A soma dos valores ${n1} e ${n2} é igual a ${s}`)
+    </script>
+</body>
+</html>
