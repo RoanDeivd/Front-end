@@ -183,7 +183,7 @@
     </section>
 
     <section class="py-4 container">
-      <div class="border border-2 rounded p-3">
+      <div class="border border-2 rounded p-3 w-75 mx-auto">
         <h3 class="f2-bold p-3">Entre em contato!</h3>
         <form id="contato">
           <div class="form-floating mb-3">
@@ -198,6 +198,21 @@
             <input type="number" class="form-control" id="floatingTelefone" placeholder="name@example.com">
             <label for="floatingTelefone">Telefone</label>
           </div>
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Preferência de contato</option>
+            <option value="1">Email</option>
+            <option value="2">Whatsapp</option>
+            <option value="3">Ligação</option>
+          </select>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Deseja receber novidades por email?
+            </label>
+          </div>
+          <label for="nivel-satisfacao" class="form-label">Nível de Satisfação:</label>
+          <input type="range" class="form-range" id="nivel-satisfacao">
+          <button type="button" class="btn botao-padrao w-100 py-3 mt-3 fw-bold">Enviar</button>
         </form>
       </div>
     </section>
