@@ -6,6 +6,17 @@ body {
   height: 400vh;
 }
 
+[data-bs-theme="dark"] {
+  color: white;
+  .nav-link, .card-body, .btn, .offcanvas, .accordion {
+    --bs-nav-link-color: white;
+    --bs-card-color: white;
+    --bs-btn-color: white;
+    --bs-offcanvas-color: white;
+    --bs-accordion-color:white;
+  }
+}
+
 input[type=checkbox] {
   border: 2px solid var(--marrom-claro);
   box-shadow: none;
